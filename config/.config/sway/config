@@ -23,7 +23,7 @@ set $term alacritty
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # Use Wofi as an App Launcher instead of dmenu
-set $menu wofi --show drun --prompt="" --width 400px --height 300px --lines 5 --allow-images | xargs swaymsg exec --
+set $menu wofi --show drun --prompt="" --width 400px --height 400px --lines 6 --allow-images | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
