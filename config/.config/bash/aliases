@@ -1,0 +1,33 @@
+
+# Pacman/Yay Commands
+alias spS='sudo pacman -S'
+alias pSyu='sudo pacman -Syu'
+alias pSs='sudo pacman -Ss'
+alias pSyy='sudo pacman -Syy'
+alias pRns='sudo pacman -Rns'
+
+# Filesystem Movement
+alias '~'='cd ~'
+alias '..'='cd ..'
+alias '...'='cd ../..'
+
+# Filesystem Viewing
+alias ls='exa --all --icons --group-directories-first'
+alias ll='exa --header --all --long --icons --group-directories-first --git'
+alias cat='bat'
+
+# Applications
+alias v='nvim'
+alias bt='bluetoothctl'
+alias pm='pulsemixer'
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+# Random Aliases
+alias wx='curl wttr.in'
+
+# Python Virtual Environment 
+alias actv='source venv/bin/activate'
+alias dactv='deactivate'
+
+# GRUB
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Visual Indicator of Bluetooth Connection Status
+
+status=$(echo -e info | bluetoothctl | rg "Connected" | awk '{ print $2}')
+
+if [ $status = "yes" ]; then
+	echo "☁️"
+else
+	echo ""
+fi

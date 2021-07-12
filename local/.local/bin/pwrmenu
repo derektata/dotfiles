@@ -1,0 +1,12 @@
+#!/bin/bash
+
+option=$(echo "logout
+restart
+shutdown" | wofi -d -p "Power Menu")
+[[ -z $option ]] && exit
+
+case $option in
+    logout) killall sway ;;
+    restart) sudo reboot ;;
+    shutdown) sudo poweroff ;;
+esac

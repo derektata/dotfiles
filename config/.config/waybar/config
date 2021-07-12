@@ -1,0 +1,37 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/window", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "battery", "tray"],
+    "sway/window": {
+        "max-length": 75
+    },
+    "battery": {
+        "format": " {icon} {capacity}% ",
+    	"format-icons": [" ", " ", " ", " ", " "],
+	"on-click": " ~/.local/bin/pwrmenu &" 
+    },
+    "clock": {
+        "format": "{:%a, %b %d, %Y | %l:%M %p}",
+	"tooltip-format": "",
+	"on-click": "$TERMINAL -e calcurse &"
+    },
+    "network": {
+	"format-wifi": " ︁  {essid} ",
+	"format-disconnected": " ︁  ",
+	"tooltip-format-wifi": "{signalStrength}%",
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "$TERMINAL -e ~/.local/bin/network &"
+    },
+    "pulseaudio": {
+	"format": " {icon} {volume}% ",
+	"format-bluetooth": " {icon} {volume}% ",
+	"format-muted": "",
+	"format-icons": {
+		"default": [" ", " "]
+    	},
+	"on-click": "$TERMINAL -e pulsemixer &"
+    }
+
+}
+

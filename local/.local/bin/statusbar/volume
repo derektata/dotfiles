@@ -1,0 +1,15 @@
+#!/bin/sh
+
+mute=$(pulsemixer --get-mute)
+vol=$(pulsemixer --get-volume | awk {'print $1'})
+
+if [ "$mute" = "1" ]; then
+  echo "🔇 Muted"
+elif [ "$(echo "$vol" | tr -d "%")" -gt 70 ]; then
+  echo "🔊 $vol%"
+elif [ "$(echo "$vol" | tr -d "%")" -gt 30 ]; then
+  echo "🔉 $vol%"
+else
+  echo "🔈 $vol%"
+fi
+
