@@ -23,7 +23,7 @@ set $term alacritty
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # Use Wofi as an App Launcher instead of dmenu
-set $menu wofi --show drun --prompt="" --width 400px --height 400px --lines 6 --allow-images | xargs swaymsg exec --
+set $menu wofi --show drun --prompt="" --allow-images | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
@@ -81,6 +81,9 @@ input type:touchpad {
     # Open File Manager (Nautilus)
     bindsym $mod+Shift+f exec nautilus &
     
+    # Emoji Picker
+    bindsym Alt+e exec rofimoji &
+
     # Volume Controls
     bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
     bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
