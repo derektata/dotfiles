@@ -8,5 +8,5 @@ I use [`stow`](https://www.gnu.org/software/stow/manual/stow.html) to manage my 
 	Waybar		(Status Bar)
 	Alacritty	(Terminal)
 	Lf		(File Browser)
-	Neovim		(Terminal Text Editor)
+	Neovim		(Text Editor)
 	Firefox		(Web Browser)
