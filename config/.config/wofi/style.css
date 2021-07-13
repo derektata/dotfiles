@@ -7,9 +7,11 @@ background-color: #282828;
 
 #input {
 margin: 5px;
+padding: 0.5em;
 border: 1px solid #ebdbb2;
 background-color: #ebdbb2;
 color: #32302f;
+font-size: 2em;
 }
 
 #input:focus {
@@ -40,6 +42,7 @@ border-radius: 4px;
 #text {
 margin: 5px;
 color: #32302f;
+font-size: 1.5em;
 /* border: 2px solid cyan; */
 /* background-color: cyan; */
 } 
