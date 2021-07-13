@@ -9,4 +9,4 @@ I use [`stow`](https://www.gnu.org/software/stow/manual/stow.html) to manage my 
 	Alacritty	(Terminal)
 	Lf		(File Browser)
 	Neovim		(Text Editor)
-	Firefox		(Web Browser)
+	Brave		(Web Browser)
