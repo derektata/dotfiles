@@ -1,0 +1,4 @@
+action = copy
+files = [emojis, hebrew]
+skin-tone = neutral
+
